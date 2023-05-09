@@ -1,0 +1,72 @@
+.cabecalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.4em;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+.menu-logo {
+    gap: 1.5em;
+}
+
+.menu-interacao {
+    gap: 0.5em
+}
+
+#menu {
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+    left: 0;
+}
+
+.container_botao:checked ~ .lista-menu { 
+    /*A pseudo-classe "checked" detecta se o input está preenchido
+    
+    O acento ~ é um combinador css e serve pra selecionar elementos que são irmãos do primeiro elemento especificado
+
+    basicamente quer dizer que se o container_botao estiver marcado, o display da lista-menu se tornará block
+    */
+    display: block;
+}
+
+.lista-menu_titulo, .lista-menu_item {
+    background-color: var(--branco);
+    padding: 1em 1.5em;
+}
+
+.lista-menu_titulo  {
+    color: var(--amarelo);
+    font-weight: 700;
+}
+
+.lista-menu_link {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
