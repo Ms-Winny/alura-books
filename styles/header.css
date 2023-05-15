@@ -40,7 +40,10 @@
     position: absolute;
     top: 100%;
     width: 65vw;
-    left: 0;
+}
+
+.lista-menu_mobile {
+    left: 0; /*Serve pra manter a lista colada na esquerda nas versões mobile*/
 }
 
 .container_botao:checked ~ .lista-menu { 
@@ -70,4 +73,59 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.cabecalho-titulo {
+    display: none;
+    font-family: var(--fonte-logo);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.cabecalho-titulo strong {
+    font-weight: 700;
+}
+
+.menu-opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho-titulo {
+        display: block;
+    }
+
+    .menu-opcoes {
+        display: flex;
+    }
+
+    .opcoes-item {
+        padding: 0 1em;
+        text-transform: uppercase;
+        color: var(--preto);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .opcoes-link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .transparente {
+        display: none;
+    }
+
+    .categorias-menu:checked ~ .lista-menu {
+        display: block;
+    }
+
+    .lista-menu {
+        width: auto;
+    }
+
+    .container_botao {
+        display: none;
+    }
+
 }
