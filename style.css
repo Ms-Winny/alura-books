@@ -3,12 +3,15 @@
 @import url(styles/carrossel.css);
 @import url(styles/card.css);
 @import url(styles/topics.css);
+@import url(styles/cadastro.css);
 @import url(styles/footer.css);
 
 :root {
     --cor-de-fundo: #EBECEE;
     --preto: #000000;
     --branco: #FFFFFF;
+    --cinza-escuro: #474646;
+    --cinza-claro: #858585;
     --amarelo: #EB9B00;
     --azul: #002F52;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
