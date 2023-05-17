@@ -86,3 +86,24 @@
         margin: 3em auto;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .descricao_titulo {
+        font-size: 32px;
+        line-height: 48px;
+        max-width: 380px;
+    }
+
+    .descricao_titulo-livro {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .descricao_texto {
+        font-size: 16px;
+    }
+
+    .card {
+        margin-right: 0;
+    }
+}
